@@ -1,0 +1,30 @@
+.movies-genre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: min(450px, 100%);
+    box-shadow: 0px 1px 2px rgb(148, 148, 148);
+    min-height: 30vh;
+    margin: 30px auto;
+}
+.categorie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    
+}
+
+.genre p:hover {
+    color: rgb(4, 126, 126);
+    transition: .20s ease-in-out;
+    cursor: pointer;
+    border-bottom: 2px solid rgb(4, 126, 126);
+    border-left: 2px solid rgb(4, 126, 126);
+    box-shadow: 0px 1px 2px rgb(148, 148, 148);
+    padding: 5px;
+    border-radius: 3px;
+}
