@@ -1,4 +1,4 @@
-import { Categories } from "./CategoriesType";
+import { CategoriesType } from "./CategoriesType";
 
 export interface MoviesType {
 
@@ -9,5 +9,5 @@ export interface MoviesType {
     vote_average:number;
     origin_country:string[];
     poster_path:string;
-    genres:Categories;
+    genres:CategoriesType;
 }
