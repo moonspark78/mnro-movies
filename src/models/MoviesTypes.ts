@@ -1,7 +1,6 @@
 import { CategoriesType } from "./CategoriesType";
 
 export interface MoviesType {
-
     id: number;
     name: string;
     overview: string;
