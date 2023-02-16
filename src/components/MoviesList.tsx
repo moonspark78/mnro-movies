@@ -11,6 +11,8 @@ export const MoviesList = () => {
   useEffect(() => {
     axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=a53249c1f434a6defe03d88903ea45ac&language=en-US&page=1`).then(res => {
       setMovies(res.data.results);
+      console.log(res.data.results);
+      
     }).catch(err => console.log(err))
 
 },[])

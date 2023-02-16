@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MoviesType } from "../models/MoviesTypes";
 import './MovieCard.css'
+import {Link} from "react-router-dom"
 
 type MovieCardProps = {
     movie: MoviesType;
@@ -15,8 +16,7 @@ const MovieCard = ({movie} : MovieCardProps) => {
     return(
         <div className="movieCard">
             <h3>{movie.name}</h3>
-            <a href="#"><img src={img} alt={movie.name}/></a>
-
+            <Link to = {`/details/${movie.id}`}><img src={img} alt={movie.name}/></Link>
         </div>
         )
 }
