@@ -1,0 +1,55 @@
+.details{
+    display: flex;
+    gap: 200px;
+    width: min(1100px, 100%);
+    margin: auto;
+    border: black solid 1px;
+    padding: 20px;
+    margin-top: 20vh;
+}
+
+body{
+    background-color: rgb(188, 188, 188);
+}
+
+button{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.rating{
+    width: 70px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.partLeft{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid black ;
+    gap: 10px;
+}
+
+.partRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.titleDetail{
+    font-size: 70px;
+}

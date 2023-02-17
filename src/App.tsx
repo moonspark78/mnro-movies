@@ -12,10 +12,9 @@ function App() {
   return (
     <Router>
     <div>
-          <Link to ="/">Home</Link>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/details/:movieId" element={<Details/>} />
+      <Route path="/details/:id" element={<Details/>} />
     </Routes>
     </div>
   </Router>

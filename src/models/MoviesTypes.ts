@@ -2,7 +2,7 @@ import { CategoriesType } from "./CategoriesType";
 
 export interface MoviesType {
     id: number;
-    name: string;
+    title: string;
     overview: string;
     backdrop_path: string;
     vote_average:number;

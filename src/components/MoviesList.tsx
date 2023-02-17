@@ -9,7 +9,7 @@ export const MoviesList = () => {
 
   const key = process.env.API_KEY;
   useEffect(() => {
-    axios.get(`https://api.themoviedb.org/3/tv/popular?api_key=a53249c1f434a6defe03d88903ea45ac&language=en-US&page=1`).then(res => {
+    axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=a53249c1f434a6defe03d88903ea45ac&language=en-US&page=1`).then(res => {
       setMovies(res.data.results);
       console.log(res.data.results);
       

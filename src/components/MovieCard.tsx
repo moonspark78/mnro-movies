@@ -15,8 +15,8 @@ const MovieCard = ({movie} : MovieCardProps) => {
     const img = getPosterURL(movie.poster_path)
     return(
         <div className="movieCard">
-            <h3>{movie.name}</h3>
-            <Link to = {`/details/${movie.id}`}><img src={img} alt={movie.name}/></Link>
+            <h3>{movie.title}</h3>
+            <Link to = {`/details/${movie.id}`}><img src={img} alt={movie.title}/></Link>
         </div>
         )
 }
