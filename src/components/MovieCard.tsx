@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import { MoviesType } from "../models/MoviesTypes";
 import './MovieCard.css'
 
@@ -15,8 +16,7 @@ const MovieCard = ({movie} : MovieCardProps) => {
     return(
         <div className="movieCard">
             <h3>{movie.title}</h3>
-            <a href="#"><img src={img} alt={movie.title}/></a>
-
+            <Link to = {`/details/${movie.id}`}><img src={img} alt={movie.title}/></Link>
         </div>
         )
 }
