@@ -1,19 +1,21 @@
 import React, { useEffect, useState } from "react";
+import axios from "axios";
 import MovieCard from "./MovieCard";
 import { MoviesType } from "../models/MoviesTypes";
 import "./MoviesList.css";
-import { getMovies } from "../api/movies";
 
 export const MoviesList = () => {
   const [movies, setMovies] = useState([]);
 
-  const getAllMovies = async () => {
-    const resultMovies = await getMovies();
-    setMovies(resultMovies);
-  };
-
   useEffect(() => {
-    getAllMovies();
+    axios
+      .get(
+        `https://api.themoviedb.org/3/movie/popular?api_key=a53249c1f434a6defe03d88903ea45ac&language=en-US&page=1`
+      )
+      .then((res) => {
+        setMovies(res.data.results);
+      })
+      .catch((err) => console.log(err));
   }, []);
 
   return (
