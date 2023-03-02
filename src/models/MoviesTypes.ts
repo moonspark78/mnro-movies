@@ -9,4 +9,5 @@ export interface MoviesType {
     origin_country:string[];
     poster_path:string;
     genre_ids:CategoriesType;
+    release_date: string;
 }
