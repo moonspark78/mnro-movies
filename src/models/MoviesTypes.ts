@@ -8,5 +8,5 @@ export interface MoviesType {
     vote_average:number;
     origin_country:string[];
     poster_path:string;
-    genres:CategoriesType;
+    genre_ids:CategoriesType;
 }
