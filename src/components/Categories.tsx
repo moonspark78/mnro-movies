@@ -5,9 +5,11 @@ import "./Categories.css";
 
 type Categoriesprops = {
   title: string;
+  handleClick: (id: number) => void;
 };
 
-export const Categories = ({ title }: Categoriesprops) => {
+export const Categories = ({ title, handleClick}: Categoriesprops) => {
+  
   const [categories, setCategories] = useState([]);
 
   const getAllCategories = async () => {
@@ -19,13 +21,14 @@ export const Categories = ({ title }: Categoriesprops) => {
     getAllCategories();
   }, []);
 
+
   return (
     <div className="movies-genre">
       <h1>{title}</h1>
       <div className="categorie">
         {categories.map((item: CategoriesType) => (
           <div className="genre" key={item.id}>
-            <p>{item.name}</p>
+            <button onClick={() =>handleClick(item.id)}><p>{item.name}</p></button>
           </div>
         ))}
       </div>

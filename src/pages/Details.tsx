@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import "./Details.css";
 import { MoviesType } from "../models/MoviesTypes";
-import { getDetails } from "../api/details";
+import { getDetails } from "../api/movies";
 
 export const Details = () => {
 
