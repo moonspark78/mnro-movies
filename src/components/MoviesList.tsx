@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import MovieCard from "./MovieCard";
+import{ MovieCard }from "./MovieCard";
 import { MoviesType } from "../models/MoviesTypes";
 import "./MoviesList.css";
 import { getMovies } from "../api/movies";
@@ -16,14 +16,14 @@ export const MoviesList = ({categoryId}:{ categoryId: number | null}) => {
     setMovies(resultMovies);
   };
 
-  const getMoviesByGenres = async (id: number) => {
+  const setMoviesByCategories = async (id: number) => {
     const resultMoviesBycategory = await getMoviesByCategories(id);
     setMovies(resultMoviesBycategory);
   };
 
   useEffect(() => {
     getAllMovies();
-    if(categoryId) getMoviesByGenres(categoryId);
+    if(categoryId) setMoviesByCategories(categoryId);
   }, [categoryId]);
 
 
@@ -38,4 +38,3 @@ export const MoviesList = ({categoryId}:{ categoryId: number | null}) => {
   );
 };
 
-export default MoviesList;

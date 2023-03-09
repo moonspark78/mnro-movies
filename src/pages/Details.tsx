@@ -7,7 +7,6 @@ import { getDetails } from "../api/movies";
 export const Details = () => {
 
   const { id } = useParams();
-  console.log(id);
 
   const [movie, setMovie] = useState<MoviesType>();
 
@@ -15,7 +14,6 @@ export const Details = () => {
     const resultDeatils = await getDetails(id); 
     setMovie(resultDeatils);
   };
-  
 
   useEffect(() => {
     getAllDetails(id)
@@ -33,7 +31,7 @@ export const Details = () => {
         <div className="partLeft">
           <img
             src={`https://image.tmdb.org/t/p/w220_and_h330_face${movie.poster_path}`}
-            alt=""
+            alt="Movie Poster"
           />
         </div>
         <div className="partRight">
