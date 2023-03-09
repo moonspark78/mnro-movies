@@ -1,10 +1,12 @@
-.movieList{
-    width: 90%;
-    background-color: rgb(64, 64, 64);
-    margin: auto;
 
-    /* GRID---------------- */
+.movie-parents {
+    background-color: white;
+}
+.movieList{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    padding: auto;
+    gap: 20px;
+    background-color: white;
+    padding: 20px 30px;
+
 }

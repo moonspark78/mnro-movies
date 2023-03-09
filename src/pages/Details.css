@@ -1,26 +1,35 @@
 .details{
     display: flex;
-    gap: 200px;
+    align-items: center;
+    justify-content: center ;
+    gap: 75px;
     width: min(1100px, 100%);
     margin: auto;
-    border: black solid 1px;
     padding: 20px;
-    margin-top: 20vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 1px 2px rgb(148, 148, 148);
+
 }
 
+/* .partLeft img {
+    ;
+} */
+
 body{
-    background-color: rgb(188, 188, 188);
+    background-color: rgb(218, 216, 216);
 }
 
 button{
     width: 100px;
     height: 30px;
-    border-radius: 10px;
+    border-radius: 3px;
     border: none;
     background-color: black;
     color: white;
     margin: 10px;
     cursor: pointer;
+    font-weight: 600;
 }
 
 .rating{
@@ -38,6 +47,7 @@ button{
     display: flex;
     align-items: center;
     border-right: 1px solid black ;
+    padding-right: 75px;
     gap: 10px;
 }
 
@@ -47,6 +57,9 @@ button{
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+
+
 }
 
 

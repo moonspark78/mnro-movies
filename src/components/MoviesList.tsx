@@ -28,11 +28,13 @@ export const MoviesList = ({categoryId}:{ categoryId: number | null}) => {
 
 
   return (
-    <div className="movieList">
+   <div className="movie-parents">
+     <div className="movieList">
       {movies.map((movie: MoviesType, id) => {
         return <MovieCard key={id} movie={movie} />;
       })}
     </div>
+   </div>
   );
 };
 
