@@ -21,8 +21,6 @@ export const Details = () => {
     getAllDetails(id)
   }, []);
 
-
-
     if(!movie) return null;
 
   return (
